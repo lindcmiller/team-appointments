@@ -1,0 +1,26 @@
+body {
+  background-color: #EEE;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #184B5E;
+  color: #EEE;
+  height: 5em;
+}
+
+.title {
+  float: left;
+  display: inline; 
+}
+
+.add-app {
+  float: right;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  display: inline;
+}
