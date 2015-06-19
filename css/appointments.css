@@ -1,5 +1,5 @@
 body {
-  background-color: #EEE;
+  background-color: #D6F7D9;
 }
 
 a {
@@ -7,20 +7,56 @@ a {
 }
 
 header {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 0;
   background-color: #184B5E;
   color: #EEE;
   height: 5em;
+  font-family: 'Shadows Into Light', sans-serif;
+  text-align: center;
 }
 
 .title {
-  float: left;
-  display: inline; 
+  position: relative;
+  display: inline;
+  margin: auto;
+  top: 0.3em;
+  color: #EEE;
+  font-size: 3em;
 }
 
 .add-app {
   float: right;
-  position: absolute;
-  top: 1em;
-  right: 1em;
+  position: relative;
+  top: 0.75em;
+  right: 2em;
   display: inline;
+  color: #EEE;
+  font-size: 2em;
+}
+
+.new-appt {
+  margin-top: 6.5em;
+  border: 1em;
+  box-shadow: inset -3px 5px 64px -14px rgba(1,133,181,0.65);
+}
+
+label {
+  font-family: 'Shadows Into Light', sans-serif;
+  font-size: 1.5em;
+  position: relative;
+  display: block;
+  width: 40%;
+  margin: 0.5em auto;
+}
+
+.new-appt input {
+  position: relative;
+  display: block;
+  width: 40%;
+  margin: auto;
+  line-height: 2em;
+  font-size: 1em;
 }
