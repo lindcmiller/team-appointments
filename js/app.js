@@ -19,13 +19,16 @@ var app = {};
          $('.new-appt').on('submit', function (e) {
               e.preventDefault();
           var appt = {}; 
+          var arr = [];
             appt.title = $('.title').val();
             appt.date = $('.date').val();
             appt.time = $('.time').val();
             appt.street = $('.street').val();
             appt.city = $('.city').val();
             appt.state = $('.state').val();
-              console.log(appt);
+              
+            arr.push(appt);
+            console.log(arr);
          });
        
        },
