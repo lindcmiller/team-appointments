@@ -13,20 +13,19 @@ var app = {};
          $('.main-content').html($('#create-appt').html());
        },
 
-       new: function(){
-         //myNewFunction();
+       new: myNewFunction() {
          $('.main-content').html($('#create-appt').html());
          $('.add-button').on('submit', function (e) {
           e.preventDefault();
-          $('.classname').val()
-           },
+         $('.title').val();
+         },
 
-       detail: function(){
+       detail: function() {
 
 
        },
 
-       edit: function(id){
+       edit: function(id) {
          alert("Put templates Here??" + id);
        },
      });
