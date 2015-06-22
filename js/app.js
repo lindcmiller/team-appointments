@@ -9,7 +9,7 @@ var app = {};
        },
 
        home: function(){
-         new Homeiew();
+         new HomeView();
        },
 
        new: function(){
@@ -34,5 +34,3 @@ var app = {};
      // });
 
      Backbone.history.start();
-
-   </script>
