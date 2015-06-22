@@ -8,13 +8,14 @@ var app = {};
          'edit/:id':'edit',
        },
 
-       home: function(){
-         new HomeView();
+       home: function() {
+         //myHomeFunction();
+         $('body').html('<h1>Home screen</h1>');
        },
 
        new: function(){
-
-
+         //myNewFunction();
+         $('body').html('<h1>New appointment</h1>');
        },
 
        detail: function(){
