@@ -9,9 +9,35 @@
 </head>
 <body>
 
-<div>
+ <header>
+    <h1 class="title">Appointments</h1>
+    <a class="add-app" href="#">+</a>
+  </header>
+
+<div class="main-content">
     <h1>Loading...</h1>
 </div>
+
+
+<script type="text/template" id="create-appt"> 
+    <form class="new-appt" action="index.html" method="post">
+      <label>Title</label>
+        <input type="text" placeholder="title">
+      <label>Date</label>
+        <input type="text" placeholder="date">
+      <label>Time</label>
+        <input type="text" placeholder="time">
+      <label>Street</label>
+        <input type="text" placeholder="street">
+      <label>City</label>
+        <input type="text" placeholder="city">
+      <label>State</label>
+        <input type="text" placeholder="state">
+
+      <button type="submit" name="button" class="add-button"></button>
+
+    </form>
+</script> 
 
 <script src="js/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>

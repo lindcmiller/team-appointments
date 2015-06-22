@@ -10,12 +10,12 @@ var app = {};
 
        home: function() {
          //myHomeFunction();
-         $('body').html('<h1>Home screen</h1>');
+         $('.main-content').html($('#create-appt').html());
        },
 
        new: function(){
          //myNewFunction();
-         $('body').html('<h1>New appointment</h1>');
+         $('.main-content').html($('#create-appt').html());
        },
 
        detail: function(){
