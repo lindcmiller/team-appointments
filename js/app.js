@@ -16,7 +16,10 @@ var app = {};
        new: function(){
          //myNewFunction();
          $('.main-content').html($('#create-appt').html());
-       },
+         $('.add-button').on('submit', function (e) {
+          e.preventDefault();
+          $('.classname').val()
+           },
 
        detail: function(){
 

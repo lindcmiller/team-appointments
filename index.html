@@ -18,6 +18,29 @@
     <h1>Loading...</h1>
 </div>
 
+<script type="text/template" id="all-appts">
+    <ul>
+      <li>
+        <%- m.title %>
+      </li>
+      <li>
+        <%- m.date %>
+      </li>
+      <li>
+        <%- m.time %>
+      </li>
+      <li>
+        <%- m.street %>
+      </li>
+      <li>
+        <%- m.city %>
+      </li>
+      <li>
+        <%- m.state %>
+      </li>
+    </ul>
+
+  </script>
 
 <script type="text/template" id="create-appt"> 
     <form class="new-appt" action="index.html" method="post">
