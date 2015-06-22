@@ -13,21 +13,27 @@ var app = {};
          $('.main-content').html($('#create-appt').html());
        },
 
-       new: myNewFunction() {
+       new: function() {
+         //myNewFunction() 
          $('.main-content').html($('#create-appt').html());
-         $('.add-button').on('submit', function (e) {
-          e.preventDefault();
-         $('.title').val();
-         },
-
-       detail: function() {
-
-
+         $('.new-appt').on('submit', function (e) {
+              e.preventDefault();
+              // var newappt = $('.add-button').serialize();
+              // $.post('', newappt, function(data) {
+              // $('.add-button').html(data);
+              alert('hi');
+         });
+       
        },
 
-       edit: function(id) {
-         alert("Put templates Here??" + id);
-       },
+      // detail: function() {
+
+
+      // },
+
+     //  edit: function(id) {
+     //    alert("Put templates Here??" + id);
+     //  },
      });
 
 
