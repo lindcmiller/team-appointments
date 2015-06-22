@@ -18,10 +18,14 @@ var app = {};
          $('.main-content').html($('#create-appt').html());
          $('.new-appt').on('submit', function (e) {
               e.preventDefault();
-              // var newappt = $('.add-button').serialize();
-              // $.post('', newappt, function(data) {
-              // $('.add-button').html(data);
-              alert('hi');
+          var appt = {}; 
+            appt.title = $('.title').val();
+            appt.date = $('.date').val();
+            appt.time = $('.time').val();
+            appt.street = $('.street').val();
+            appt.city = $('.city').val();
+            appt.state = $('.state').val();
+              console.log(appt);
          });
        
        },

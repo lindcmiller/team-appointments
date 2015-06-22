@@ -27,7 +27,7 @@ header {
   font-size: 3em;
 }
 
-.add-button {
+.add-app {
   float: right;
   position: relative;
   top: 0.75em;
@@ -47,6 +47,7 @@ header {
 label {
   font-family: 'Shadows Into Light', sans-serif;
   font-size: 1.5em;
+  color: #184B5E;
   position: relative;
   display: block;
   width: 40%;
@@ -60,4 +61,16 @@ label {
   margin: auto;
   line-height: 2em;
   font-size: 1em;
+  color: #184B5E;
+}
+
+.add-button {
+  display: block;
+  margin: 1em auto;
+  height: 2em;
+  width: 3em;
+  font-family: 'Shadows Into Light', sans-serif;
+  font-size: 1.5em;
+  background-color: #184B5E;
+  color: #EEE;
 }
