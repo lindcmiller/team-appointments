@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Appointments</title>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header>
+    <h1 class="title">Appointments</h1>
+    <a class="add-app" href="#">+</a>
+  </header>
+
+  <script type="text/template" id="all-appts">
+    <ul>
+      <li>
+        <%- m.title %>
+      </li>
+      <li>
+        <%- m.date %>
+      </li>
+      <li>
+        <%- m.time %>
+      </li>
+      <li>
+        <%- m.street %>
+      </li>
+      <li>
+        <%- m.city %>
+      </li>
+      <li>
+        <%- m.state %>
+      </li>
+    </ul>
+
+  </script>
+
+<!--  <script type="text/template" id="create-appt"> -->
+    <form class="new-appt" action="index.html" method="post">
+      <label>Title</label>
+        <input type="text" placeholder="title">
+      <label>Date</label>
+        <input type="text" placeholder="date">
+      <label>Time</label>
+        <input type="text" placeholder="time">
+      <label>Street</label>
+        <input type="text" placeholder="street">
+      <label>City</label>
+        <input type="text" placeholder="city">
+      <label>State</label>
+        <input type="text" placeholder="state">
+
+      <button type="submit" name="button" class="add-button"></button>
+
+    </form>
+<!--  </script> -->
+
+
+<script src="js/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.1/backbone-min.js"></script>
+
+</body>
+</html>
