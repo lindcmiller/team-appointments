@@ -18,29 +18,35 @@ header {
   text-align: center;
 }
 
-.title {
+.icon-calendar {
+  float: left;
   position: relative;
-  display: inline;
-  margin: auto;
-  top: 0.3em;
+  top: 0.75em;
+  left: 2em;
   color: #EEE;
-  font-size: 3em;
+  font-size: 2em;
 }
 
-.add-app {
+.title {
+  position: relative;
+  margin: 0.75em auto;
+  color: #EEE;
+  font-size: 2em;
+}
+
+i.fa.fa-plus {
   float: right;
   position: relative;
   top: 0.75em;
   right: 2em;
-  display: inline;
   color: #EEE;
   font-size: 2em;
+  z-index: 5;
 }
 
 .new-appt {
   margin-top: 6.5em;
   border: 1em;
-  
  /* box-shadow: inset -3px 5px 64px -14px rgba(1,133,181,0.65); */
 }
 

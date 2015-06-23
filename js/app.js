@@ -13,13 +13,18 @@ var arr = [];
        home: function() {
          //myHomeFunction();
          $('.main-content').html($('#create-appt').html());
+         
+         //
+         
        },
 
        new: function() {
          //myNewFunction() 
          $('.main-content').html($('#create-appt').html());
          $('.new-appt').on('submit', function (e) {
+              //console.log(1);
               e.preventDefault();
+              //console.log(2);
           var appt = {}; 
          
             appt.title = $('.title').val();
@@ -31,6 +36,10 @@ var arr = [];
               
             arr.push(appt);
             console.log(arr);
+            
+           this.navigate('', true);
+            
+           // window.location.hash = '';
          });
        
        },
