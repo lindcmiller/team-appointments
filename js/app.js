@@ -1,5 +1,7 @@
 var app = {};
 
+var arr = [];
+
      var Router = Backbone.Router.extend({
        routes:{
          '':'home',
@@ -19,7 +21,7 @@ var app = {};
          $('.new-appt').on('submit', function (e) {
               e.preventDefault();
           var appt = {}; 
-          var arr = [];
+         
             appt.title = $('.title').val();
             appt.date = $('.date').val();
             appt.time = $('.time').val();
