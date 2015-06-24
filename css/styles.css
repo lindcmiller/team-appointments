@@ -12,7 +12,14 @@ ul, li {
 
 a {
   text-decoration: none;
-  color: ;
+}
+
+a:visited {
+  color: #EEE;
+}
+
+i:hover, .add-button:hover {
+  color: #90CFBA;
 }
 
 header {

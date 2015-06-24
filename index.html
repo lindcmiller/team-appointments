@@ -15,7 +15,7 @@
   
   <body>
     <header>
-      <i class="icon-calendar"></i>
+      <a href="#all-appts"><i class="icon-calendar"></i></a>
       <h1 class="page-title">Appointments</h1>
       <a href="#new"><i class="icon-plus"></i></a>
     </header>
@@ -23,7 +23,7 @@
       <h1>Loading...</h1>
     </div>
     
-    <script type='text/template' id="all-appts">
+    <script type='text/template' id="#all-appts">
       <div class="container">
         <% m.forEach(function(appt,i) {  %>
         <ul class = "list">
@@ -43,9 +43,9 @@
         <label>Title</label>
           <input type="text" class="title">
         <label>Date</label>
-          <input type="text" class="date" placeholder="Date">
+          <input type="text" class="date">
         <label>Time</label>
-          <input type="text" class="time" placeholder="Time">
+          <input type="text" class="time">
         <label>Street</label>
           <input type="text" class="street">
         <label>City</label>
