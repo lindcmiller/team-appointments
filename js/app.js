@@ -12,8 +12,10 @@ var arr = [];
 
        home: function() {
          //myHomeFunction();
-         $('.main-content').html($('#create-appt').html());
          
+         var compiled = _.template($('#all-appts').html(), {variable: 'm'});
+          $('.main-content').html(compiled(arr[0]));
+            
          //
          
        },
@@ -37,9 +39,9 @@ var arr = [];
             arr.push(appt);
             console.log(arr);
             
-           this.navigate('', true);
+           //this.navigate('#all-appts', true);
             
-           // window.location.hash = '';
+           window.location.hash = '';
          });
        
        },
