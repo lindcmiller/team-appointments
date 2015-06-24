@@ -1,9 +1,18 @@
 body {
   background-color: #D6F7D9;
+  font-family: 'Shadows Into Light', sans-serif;
+  font-size: 1.5em;
+  color: #184B5E;
+  margin-top: 6em;
+}
+
+ul, li {
+  margin: 1em;
 }
 
 a {
   text-decoration: none;
+  color: ;
 }
 
 header {
@@ -18,31 +27,40 @@ header {
   text-align: center;
 }
 
-.icon-calendar {
-  float: left;
-  position: relative;
+input {
+  font-family: 'Shadows Into Light', sans-serif;
+}
+
+.icon-calendar, .icon-plus {
+  position: absolute;
+  display: inline;
   top: 0.75em;
-  left: 2em;
   color: #EEE;
   font-size: 2em;
 }
 
-.title {
+.icon-calendar {
+  float: left;
+  left: 2em;
+}
+
+.page-title {
   position: relative;
   margin: 0.75em auto;
   color: #EEE;
   font-size: 2em;
 }
 
-i.fa.fa-plus {
+.icon-plus {
   float: right;
-  position: relative;
-  top: 0.75em;
   right: 2em;
-  color: #EEE;
-  font-size: 2em;
-  z-index: 5;
 }
+
+/*.container {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}*/ 
 
 .new-appt {
   margin-top: 6.5em;
