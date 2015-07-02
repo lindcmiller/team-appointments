@@ -19,27 +19,30 @@
       <h1 class="page-title">Appointments</h1>
       <a href="#new"><i class="icon-plus"></i></a>
     </header>
+    
     <div class="main-content">
       <h1>Loading...</h1>
     </div>
     
-    <script type='text/template' id="#all-appts">
-      <div class="container">
-        <% m.forEach(function(appt,i) {  %>
-        <ul class = "list">
-          <li class = "title"> <a href = "#detail/<%- i %>"><%- appt.title %> </a> </li>
-          <li class = "date"><%- appt.date %></li>
-          <li class = "time"><%- appt.time %></li>
-          <li class = "street"><%- appt.street %></li>
-          <li class = "city"><%- appt.city %></li>
-          <li class = "state"><%- appt.state %></li>
-        </ul>
-        <% }) %>
-      </div>
-    </script>
-    
-    <script type="text/template" id="create-appt">
-      <form class="new-appt" action="" method="post">
+  <script type = 'text/template' id = 'all-appts'>
+    <% m.forEach(function(appt,i) {  %>
+    <ul class = "list">
+      <li class = "title"> <a href = "#detail/<%- i %>"><%- appt.title %> </a> </li>
+      <li class = "date"><%- appt.date %></li>
+      <li class = "time"><%- appt.time %></li>
+      <li class = "street"><%- appt.street %></li>
+      <li class = "city"><%- appt.city %></li>
+      <li class = "state"><%- appt.state %></li>
+    </ul>
+    <% }) %>
+  </script>
+
+  <script type = 'text/template' id = 'details'>
+    <h1> This is a test.<h1>
+  </script>
+
+<script type='text/template' id = 'create-appt'>
+    <form class = "new-appt" action = "" method = "post">
         <label>Title</label>
           <input type="text" class="title">
         <label>Date</label>
@@ -53,19 +56,19 @@
         <label>State</label>
           <input type="text" class="state">
   
-        <button type="submit" name="button" class="add-button">Save</button>
-  
-      </form>
-    </script>
+        <button type="submit" name="button" class="save">Save</button>
+   </form>
+</script>
+
     
-    <script type=' text/template' id="detail">
+    <!--<script type=' text/template' id="detail">
       <div class="container">
         <% m.forEach(function(appt,i) {  %>
           <ul class = "list">
             <li class = "title"> <a href = "#detail/<%- i %>"><%- appt.title %> </a> </li>
             <li class = "date"><%- appt.date %></li>
             <li class = "time"><%- appt.time %></li>
-            <div class="address">
+          <div class="address">
               <li class = "street"><%- appt.street %></li>
               <li class = "city"><%- appt.city %></li>
               <li class = "state"><%- appt.state %></li>
@@ -74,12 +77,13 @@
         <% }) %>
       </div>
     </script> 
-  
+  -->
     <script src="js/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.1/backbone-min.js"></script>
-    <script src="js/bower_components/pickadate.js-3.5.6/lib/picker.js"></script>
-    <script src="js/bower_components/pickadate.js-3.5.6/lib/picker.date.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.1/backbone-min.js"></script>
+    <script src = "js/pickadate.js-3.5.6/lib/picker.js"></script>
+    <script src = "js/pickadate.js-3.5.6/lib/picker.date.js"></script>
+    <script src = "js/pickadate.js-3.5.6/lib/picker.time.js"></script>
     <script src="js/views/home.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>
   </body>
